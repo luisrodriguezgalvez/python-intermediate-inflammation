@@ -165,9 +165,9 @@ def test_patient_normalise(test, expected, expect_raises):
 @pytest.mark.parametrize(
     "test, expected",
     [
-        ([ [0, 0], [0, 0], [0, 0] ], [0, 0]),
-        ([ [1, 2], [3, 4], [5, 28] ], [1.6329931618555, 11.813363431113]),
-        ([ [-8, 3], [0, -10], [20, 3] ], [11.775681155104, 6.1282587702834])
+        ([[0, 0], [0, 0], [0, 0]], [0, 0]),
+        ([[1, 2], [3, 4], [5, 28]], [1.6329931618555, 11.813363431113]),
+        ([[-8, 3], [0, -10], [20, 3]], [11.775681155104, 6.1282587702834])
     ])
 def test_daily_std(test, expected):
     """Test mean function works for array of zeroes and positive integers."""
